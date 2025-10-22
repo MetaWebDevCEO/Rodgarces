@@ -7,22 +7,21 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-content">
           <div className="hero-text">
-            <span className="hero-subtitle">LEADERSHIP ELEVATION</span>
+            <div className="hero-subtitle">CONFERENCISTA · ESCRITOR · FORMADOR</div>
             <h1 className="hero-title">
-              Strategic Coaching For Business Growth
+              Nunca te canses de comenzar de nuevo
             </h1>
             <p className="hero-description">
-              Aut officiis repellat sunt sapiente rerum non numquam necessitatibus ab ipsum 
-              illo. Qui dolor quasi ex eligendi optio eum porro molestiae ea impedit nihil sed.
+              Cada nuevo comienzo es una oportunidad para transformar tu vida
             </p>
             <button className="hero-cta">
-              Book Appointment
+              Ver mis libros
               <span className="cta-icon">●</span>
             </button>
           </div>
         </div>
         <div className="hero-image">
-          {/* Imagen de fondo se manejará con CSS */}
+          <img src="/img/F1.jpg" alt="Strategic Coaching" className="hero-right-image" />
         </div>
       </div>
     </section>

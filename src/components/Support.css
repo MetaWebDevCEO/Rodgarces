@@ -1,0 +1,163 @@
+/* Support Section */
+.support-section {
+  background-color: #000000;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.support-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.support-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.support-left {
+  color: white;
+}
+
+.support-subtitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.support-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.support-right {
+  color: white;
+}
+
+.support-description {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  max-width: 400px;
+}
+
+.support-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.support-btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  text-decoration: none;
+}
+
+.support-btn.primary {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.support-btn.primary:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-1px);
+}
+
+.support-btn.secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.support-btn.secondary:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: translateY(-1px);
+}
+
+.btn-icon {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.support-btn:hover .btn-icon {
+  transform: translateX(2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .support-content {
+    gap: 60px;
+  }
+  
+  .support-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .support-section {
+    padding: 60px 0;
+  }
+  
+  .support-container {
+    padding: 0 20px;
+  }
+  
+  .support-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .support-title {
+    font-size: 32px;
+  }
+  
+  .support-description {
+    max-width: none;
+  }
+  
+  .support-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .support-title {
+    font-size: 28px;
+  }
+  
+  .support-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .support-btn {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+}

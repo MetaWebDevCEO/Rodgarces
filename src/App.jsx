@@ -1,6 +1,11 @@
 import { useState } from 'react'
 import Navbar from './components/navbar'
 import Hero from './components/hero'
+import Soy from './components/Soy'
+import Services from './components/Services'
+import Support from './components/Support'
+import Footer from './components/Footer'
+import DecorativeElements from './components/DecorativeElements'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -10,8 +15,13 @@ function App() {
 
   return (
     <>
+      <DecorativeElements />
       <Navbar />
       <Hero />
+      <Soy />
+      <Services />
+      <Support />
+      <Footer />
 
     </>
   )
