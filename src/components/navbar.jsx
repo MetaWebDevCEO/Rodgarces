@@ -18,13 +18,11 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
-          <a href="#home" className="navbar-link">Home</a>
-          <a href="#services" className="navbar-link">Services</a>
-          <a href="#about" className="navbar-link">About Us</a>
-          <a href="#career" className="navbar-link">Career</a>
-          <a href="#blog" className="navbar-link">Blog</a>
-          <a href="#pricing" className="navbar-link">Pricing</a>
-          <a href="#contact" className="navbar-link">Contact Us</a>
+          <a href="#home" className="navbar-link">Incio</a>
+          <a href="#services" className="navbar-link">Servicios</a>
+          <a href="#about" className="navbar-link">Sobre Nosotros</a>
+          <a href="#career" className="navbar-link">Historia</a>
+          <a href="#contact" className="navbar-link">Contacto</a>
         </div>
 
         {/* Social Icons */}
