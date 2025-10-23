@@ -1,12 +1,12 @@
-/* Banner Container */
-.banner-container {
+/* Clean Banner Container */
+.clean-banner {
   position: relative;
   width: 100%;
-  height: 60px;
-  background: #ffffff;
+  height: 65px;
+  background-color: #93b3dc;
   overflow: hidden;
   z-index: 1000;
-  padding-top: 20px;
+  box-shadow: 0 2px 10px rgba(147, 179, 220, 0.3);
 }
 
 /* Banner Content */
@@ -18,74 +18,106 @@
   z-index: 2;
 }
 
-/* Marquee Container */
-.marquee {
+/* Marquee Wrapper */
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Marquee Track */
+.marquee-track {
   display: flex;
-  width: fit-content;
-  animation: scroll 20s linear infinite;
+  width: 200%;
+  animation: infiniteScroll 40s linear infinite;
   will-change: transform;
 }
 
-/* Marquee Text */
-.marquee-text {
+/* Marquee Content */
+.marquee-content {
+  display: flex;
   white-space: nowrap;
-  padding-right: 20px;
-  font-size: 16px;
-  font-weight: 700;
-  color: #e5e7eb;
+  width: 50%;
+  flex-shrink: 0;
+}
+
+/* Infinite Scroll Animation */
+@keyframes infiniteScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Banner Text */
+.banner-text {
+  white-space: nowrap;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
   display: inline-block;
-  letter-spacing: 0.8px;
-  font-family: 'Arial', 'Helvetica', sans-serif;
+  letter-spacing: 0.5px;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  text-shadow: none;
+  padding-right: 2rem;
+  flex-shrink: 0;
+  line-height: 1.4;
 }
 
-/* Scroll Animation */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+/* Hover Effect */
+.clean-banner:hover .marquee-track {
+  animation-play-state: paused;
 }
-
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .banner-container {
-    padding-top: 20px;
-    height: 55px;
+  .clean-banner {
+    height: 58px;
   }
   
-  .marquee-text {
-    font-size: 14px;
-    font-weight: 700;
-    padding-right: 15px;
+  .banner-text {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-right: 60px;
   }
 }
 
 @media (max-width: 480px) {
-  .banner-container {
-    height: 50px;
+  .clean-banner {
+    height: 52px;
   }
   
-  .marquee-text {
-    font-size: 13px;
-    font-weight: 700;
-    padding-right: 10px;
+  .banner-text {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    padding-right: 70px;
   }
 }
 
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
-  .marquee {
-    animation: scroll 60s linear infinite;
+  .marquee-track {
+    animation: infiniteScroll 60s linear infinite;
   }
 }
 
 /* Print Styles */
 @media print {
-  .banner-container {
+  .clean-banner {
     display: none;
+  }
+}
+
+/* Focus and Active States */
+.clean-banner:focus-within {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: -2px;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .banner-text {
+    text-shadow: none;
+    font-weight: 700;
   }
 }

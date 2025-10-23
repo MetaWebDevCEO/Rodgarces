@@ -2,17 +2,19 @@ import React from 'react';
 import './Banner.css';
 
 const Banner = () => {
-  const text = "★ NUEVO LIBRO ★ \"La aventura de ser papá\" ★ DISPONIBLE 14 DE NOVIEMBRE ★";
+  const bannerText = "NUEVO LIBRO • \"La aventura de ser papá\" • DISPONIBLE 14 DE NOVIEMBRE • ¡CONSÍGUELO YA!";
   
   return (
-    <div className="banner-container">
+    <div className="clean-banner">
       <div className="banner-content">
-        <div className="marquee">
-          <div className="marquee-text">
-            {text}
-          </div>
-          <div className="marquee-text">
-            {text}
+        <div className="marquee-wrapper">
+          <div className="marquee-track">
+            <div className="marquee-content">
+              <span className="banner-text">{bannerText}</span>
+            </div>
+            <div className="marquee-content">
+              <span className="banner-text">{bannerText}</span>
+            </div>
           </div>
         </div>
       </div>
@@ -21,3 +23,5 @@ const Banner = () => {
 };
 
 export default Banner;
+
+
