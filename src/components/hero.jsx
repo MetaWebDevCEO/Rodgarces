@@ -4,28 +4,52 @@ import './hero.css';
 const Hero = () => {
   return (
     <section className="hero">
-      {/* Overlay */}
-      <div className="hero-overlay"></div>
-      
-      {/* Contenido centrado */}
-      <div className="hero-content">
-        <div className="hero-text">
-          <div className="hero-subtitle">CONFERENCISTA · ESCRITOR · FORMADOR</div>
+      <div className="hero-container">
+        {/* Contenido izquierdo */}
+        <div className="hero-left">
           <h1 className="hero-title">
-            Nunca te canses de comenzar de nuevo
+            Transformo Ideas en<br />
+            <span className="hero-title-highlight">Estrategias Exitosas</span>
           </h1>
           <p className="hero-description">
-            Cada nuevo comienzo es una oportunidad para transformar tu vida y alcanzar tu máximo potencial
+            Consultor estratégico y escritor especializado en ayudar a 
+            empresarios y líderes a alcanzar sus objetivos más ambiciosos 
+            a través de metodologías probadas.
           </p>
           
           {/* Botones de acción */}
           <div className="hero-buttons">
             <button className="hero-cta-primary">
-              Ver mis libros
+              Agenda tu Consulta
             </button>
             <button className="hero-cta-secondary">
-              Conoce más
+              Ver Mis Libros
             </button>
+          </div>
+
+          {/* Estadísticas */}
+          <div className="hero-stats">
+            <div className="stat-item">
+              <div className="stat-number">500+</div>
+              <div className="stat-label">Clientes Atendidos</div>
+            </div>
+            <div className="stat-item">
+              <div className="stat-number">15</div>
+              <div className="stat-label">Años de Experiencia</div>
+            </div>
+            <div className="stat-item">
+              <div className="stat-number">8</div>
+              <div className="stat-label">Libros Publicados</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Contenido derecho - Imagen del consultor */}
+        <div className="hero-right">
+          <div className="hero-image-container">
+            <div className="hero-image-placeholder">
+              <span>Foto Profesional del Consultor</span>
+            </div>
           </div>
         </div>
       </div>

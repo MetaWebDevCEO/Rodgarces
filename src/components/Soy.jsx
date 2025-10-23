@@ -5,46 +5,47 @@ const Soy = () => {
   return (
     <section className="soy-section">
       <div className="soy-container">
-        {/* Imagen del lado izquierdo */}
-        <div className="soy-image">
-          <div className="image-container">
-            <img 
-              src="/public/img/F1.jpg" 
-              alt="Rodrigo García - Líder y Coach Profesional" 
-              className="professional-image"
-            />
-            <div className="image-overlay"></div>
-          </div>
-        </div>
-        
-        {/* Contenido del lado derecho */}
+        {/* Contenido del lado izquierdo */}
         <div className="soy-content">
-          <div className="content-header">
-            <div className="header-line"></div>
-            <h2 className="soy-title">EN ESTO CREO</h2>
-          </div>
+          <h2 className="soy-title">Sobre Mi Experiencia</h2>
           
           <div className="soy-text">
             <p className="main-paragraph">
-              En que la única manera de transformar el mundo es una persona a la vez.
+              Con más de 15 años de experiencia en consultoría estratégica, he tenido el 
+              privilegio de trabajar con empresas desde startups hasta Fortune 500, 
+              ayudándolas a navegar desafíos complejos y alcanzar resultados extraordinarios.
             </p>
             
             <p className="description-paragraph">
-              En que necesitamos seres humanos más humanos, nuevos liderazgos conscientes, 
-              transformadores, líderes con valores que descubran su propósito e inspiren a otros a 
-              descubrirlo.
-            </p>
-            
-            <p className="final-paragraph">
-              Estoy convencido de que necesitamos vivir en equilibrio de cuerpo, alma, espíritu, familia, 
-              trabajo, relaciones, ecología y finanzas. Y creo que las empresas y organizaciones deben 
-              atender esta necesidad.
+              Mi enfoque combina análisis riguroso, pensamiento estratégico y una profunda 
+              comprensión del comportamiento humano para crear soluciones que no solo 
+              funcionan en teoría, sino que generan resultados tangibles en el mundo real.
             </p>
           </div>
           
-          <div className="soy-actions">
-            <button className="btn-leer-mas">Leer más</button>
-            <p className="leadership-text">liderazgo y desarrollo organizacional</p>
+          <div className="credentials-list">
+            <div className="credential-item">
+              <span className="check-icon">✓</span>
+              <span className="credential-text">MBA en Estrategia Empresarial - Harvard Business School</span>
+            </div>
+            <div className="credential-item">
+              <span className="check-icon">✓</span>
+              <span className="credential-text">Certificación en Change Management - Prosci</span>
+            </div>
+            <div className="credential-item">
+              <span className="check-icon">✓</span>
+              <span className="credential-text">Autor de 8 libros sobre liderazgo y estrategia</span>
+            </div>
+          </div>
+        </div>
+        
+        {/* Imagen del lado derecho */}
+        <div className="soy-image">
+          <div className="image-container">
+            <div className="image-placeholder">
+              <span>Imagen del Consultor Trabajando</span>
+            </div>
+
           </div>
         </div>
       </div>

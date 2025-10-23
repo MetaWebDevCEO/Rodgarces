@@ -19,8 +19,6 @@ function App() {
       <Navbar />
       <Hero />
       <Banner />
-      <Soy />
-      <Services />
       <Support />
       <Footer />
 
