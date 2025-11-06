@@ -1,0 +1,79 @@
+/*
+  Animations & Transitions for Header
+  - Smooth interactive transitions (200–300ms)
+  - Entry animation for the whole header
+  - Hover/Focus effects for nav and controls
+  - Performance via will-change and transform
+*/
+
+:root {
+  /* Animation durations */
+  --anim-fast: 200ms;
+  --anim-base: 240ms;
+  --anim-slow: 300ms;
+}
+
+@keyframes header-enter {
+  from { opacity: 0; transform: translateY(-8px); filter: blur(2px); }
+  to { opacity: 1; transform: none; filter: none; }
+}
+
+@keyframes overlay-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes menu-pop {
+  from { opacity: 0; transform: translateY(-6px) scale(0.98); filter: blur(2px); }
+  to { opacity: 1; transform: none; filter: none; }
+}
+
+.header { position: sticky; top: 0; z-index: 1000; will-change: transform, opacity, box-shadow; }
+.header.mounted { animation: header-enter var(--anim-slow) ease-out both; }
+.header.scrolled .mainbar { box-shadow: var(--shadow-md); }
+
+.topbar { background: #2d4080; color: #cbd5e1; }
+.topbar-container { max-width: var(--max-w, 1100px); margin: 0 auto; padding: 8px 20px; display: flex; align-items: center; justify-content: space-between; }
+.brand-name { font-weight: 800; letter-spacing: .08em; color: #fff; transition: text-shadow var(--anim-fast) ease; }
+.brand-tag { font-weight: 700; font-size: 12px; letter-spacing: .16em; color: #93c5fd; }
+.contact-info { display: flex; align-items: center; gap: 8px; font-weight: 600; }
+.contact-info a { color: #cbd5e1; text-decoration: none; transition: color var(--anim-fast) ease; }
+.contact-info a:hover { color: #93c5fd; }
+.sep { opacity: .5; }
+
+.mainbar { background: #4cbbbc; border-bottom: 1px solid rgba(255,255,255,.08); transition: box-shadow var(--anim-base) ease, background-color var(--anim-base) ease; }
+.header-container { max-width: var(--max-w, 1100px); margin: 0 auto; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+
+.desktop-nav { display: none; }
+.nav-list { display: flex; gap: 18px; list-style: none; }
+/* Interactive nav links: color + subtle lift */
+.nav-list a { color: #e5e7eb; text-decoration: none; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; transition: color var(--anim-fast) ease, transform var(--anim-fast) ease, text-shadow var(--anim-fast) ease; will-change: color, transform; }
+.nav-list a:hover { color: #000000; transform: translateY(-1px); text-shadow: 0 2px 8px rgba(0,0,0,.12); }
+.nav-list a:focus-visible { outline: 3px solid rgba(0,0,0,.25); outline-offset: 2px; transform: translateY(-1px); }
+
+.menu-toggle { display: inline-flex; flex-direction: column; gap: 4px; background: transparent; border: none; cursor: pointer; transition: transform var(--anim-fast) ease; will-change: transform; }
+.menu-toggle:hover { transform: scale(1.05); }
+.hamburger-line { width: 22px; height: 2px; background: #e5e7eb; transition: transform var(--anim-fast) ease, opacity var(--anim-fast) ease, background-color var(--anim-fast) ease; will-change: transform, opacity; }
+.hamburger-line.open:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.hamburger-line.open:nth-child(2) { opacity: 0; }
+.hamburger-line.open:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,.25); opacity: 0; animation: overlay-in var(--anim-base) ease-out forwards; will-change: opacity; }
+/* Mobile nav enters with pop animation */
+.mobile-nav { position: fixed; top: 92px; right: 12px; left: 12px; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); animation: menu-pop var(--anim-base) cubic-bezier(.22,.61,.36,1) both; will-change: transform, opacity, filter; }
+.mobile-nav-list { list-style: none; padding: 12px; }
+.mobile-nav-list li { border-bottom: 1px dashed var(--color-border); }
+.mobile-nav-list li:last-child { border-bottom: none; }
+.mobile-nav-list a { display: block; padding: 12px; text-decoration: none; color: var(--color-text); font-weight: 600; transition: color var(--anim-fast) ease, background-color var(--anim-fast) ease; }
+.mobile-nav-list a:hover { color: var(--color-primary); background-color: rgba(45,64,136,.06); }
+
+@media (min-width: 860px) {
+  .desktop-nav { display: block; }
+  .menu-toggle { display: none; }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .header.mounted, .overlay, .mobile-nav { animation: none !important; }
+  .nav-list a, .menu-toggle, .hamburger-line, .mainbar, .brand-name, .contact-info a { transition: none !important; }
+}

@@ -1,0 +1,10 @@
+.trusted { padding: 40px 20px; background: #0b1220; color: #fff; }
+.trusted-container { max-width: var(--max-w, 1100px); margin: 0 auto; }
+.trusted-title { font-size: 16px; text-transform: uppercase; letter-spacing: .16em; color: #93c5fd; font-weight: 800; }
+.trusted-logos { margin-top: 14px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; align-items: center; }
+.logo-item { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: var(--radius-md); padding: 10px; display: flex; align-items: center; justify-content: center; transition: transform 200ms ease, background 200ms ease; }
+.logo-item:hover { transform: translateY(-2px); background: rgba(255,255,255,.1); }
+.logo-item img { max-height: 40px; width: auto; object-fit: contain; filter: grayscale(100%) brightness(1.2); }
+
+@media (min-width: 780px) { .trusted-logos { grid-template-columns: repeat(6, 1fr); } }
+
