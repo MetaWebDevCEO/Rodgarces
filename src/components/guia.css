@@ -1,0 +1,42 @@
+.guia-section {
+  background-color: #fafaf9; /* stone-50 */
+  position: relative;
+}
+
+.guia-section::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 80%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(231, 229, 228, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
+  transform: rotate(-15deg);
+  pointer-events: none;
+}
+
+/* Reusing animations or defining them if not global. 
+   Since we can't easily rely on global across all css files without imports, 
+   I'll redefine them to ensure self-containment for now. */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
