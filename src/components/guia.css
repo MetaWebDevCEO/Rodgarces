@@ -1,18 +1,5 @@
 .guia-section {
-  background-color: #fafaf9; /* stone-50 */
-  position: relative;
-}
-
-.guia-section::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  right: -20%;
-  width: 80%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(231, 229, 228, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
-  transform: rotate(-15deg);
-  pointer-events: none;
+  background-color: #ffffff;
 }
 
 /* Reusing animations or defining them if not global. 

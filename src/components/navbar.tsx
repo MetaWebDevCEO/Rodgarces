@@ -27,17 +27,17 @@ const Navbar = () => {
             <Link href="/" className="text-gray-600 hover:text-gray-900 font-medium transition-colors animate-fade-in" style={{ animationDelay: '0.1s' }}>
               Inicio
             </Link>
-            <Link href="#talks" className="text-gray-600 hover:text-gray-900 font-medium transition-colors animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <Link href="/conferencia" className="text-gray-600 hover:text-gray-900 font-medium transition-colors animate-fade-in" style={{ animationDelay: '0.2s' }}>
               Conferencias
             </Link>
-            <Link href="#books" className="text-gray-600 hover:text-gray-900 font-medium transition-colors animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <Link href="/libros" className="text-gray-600 hover:text-gray-900 font-medium transition-colors animate-fade-in" style={{ animationDelay: '0.3s' }}>
               Libros
             </Link>
-            <Link href="#about" className="text-gray-600 hover:text-gray-900 font-medium transition-colors animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <Link href="/sobre-mi" className="text-gray-600 hover:text-gray-900 font-medium transition-colors animate-fade-in" style={{ animationDelay: '0.4s' }}>
               Sobre mí
             </Link>
             <Link
-              href="#contact"
+              href="/contacto"
               className="bg-gray-900 text-white px-5 py-2.5 rounded-full font-medium hover:bg-gray-800 transition-all transform hover:scale-105 animate-fade-in"
               style={{ animationDelay: '0.5s' }}
             >
@@ -102,28 +102,28 @@ const Navbar = () => {
             Inicio
           </Link>
           <Link
-            href="#talks"
+            href="/conferencia"
             onClick={() => setIsOpen(false)}
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
           >
             Conferencias
           </Link>
           <Link
-            href="#books"
+            href="/libros"
             onClick={() => setIsOpen(false)}
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
           >
             Libros
           </Link>
           <Link
-            href="#about"
+            href="/sobre-mi"
             onClick={() => setIsOpen(false)}
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
           >
             Sobre mí
           </Link>
           <Link
-            href="#contact"
+            href="/contacto"
             onClick={() => setIsOpen(false)}
             className="block w-full text-center mt-4 px-5 py-3 rounded-full font-medium bg-gray-900 text-white hover:bg-gray-800"
           >

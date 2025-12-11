@@ -14,7 +14,7 @@ export default function Exito() {
   ];
 
   return (
-    <section className="bg-gradient-to-t from-gray-50 to-white py-24 sm:py-32 overflow-hidden">
+    <section className="bg-white py-24 sm:py-32 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2 lg:items-center">
           
