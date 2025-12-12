@@ -34,8 +34,8 @@ const Testimonio = () => {
     <section className="bg-white py-24 sm:py-32 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center fade-in-up">
-          <h2 className="text-lg font-semibold leading-8 tracking-tight text-blue-600 uppercase">Testimonios</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl font-display">
+          <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#094293] uppercase">Testimonios</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-[#094293] sm:text-4xl font-display">
             Lo que dicen quienes han vivido la experiencia
           </p>
         </div>

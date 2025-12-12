@@ -4,6 +4,7 @@ import Problema from "@/components/problema";
 import Guia from "@/components/guia";
 import Plan from "@/components/plan";
 import Testimonio from "@/components/testimonio";
+import Exito from "@/components/exito";
 
 import Consecuencias from "@/components/consecuencias";
 import Footer from "@/components/footer";
@@ -18,6 +19,7 @@ export default function Home() {
       <Plan />
       <Testimonio />
       <Consecuencias />
+      <Exito />
       <Footer />
     </main>
   );

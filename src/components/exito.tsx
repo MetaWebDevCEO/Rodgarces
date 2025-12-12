@@ -1,5 +1,4 @@
 'use client';
-
 import Image from 'next/image';
 import './exito.css';
 
@@ -19,7 +18,7 @@ export default function Exito() {
         <div className="grid grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2 lg:items-center">
           
           <div className="lg:pr-8 fade-in-up">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl font-display mb-8">
+            <h2 className="text-3xl font-bold tracking-tight text-[#094293] sm:text-4xl font-display mb-8">
               Imagina lo que puede pasar cuando eliges comenzar de nuevo
             </h2>
             
@@ -35,17 +34,16 @@ export default function Exito() {
             </ul>
 
             <div className="mt-12 border-l-4 border-gray-900 pl-6 py-2">
-              <p className="text-xl font-semibold text-gray-900 italic">
-                "Cada inicio tiene un poder inmenso. Estoy aquí para acompañarte."
+              <p className="text-xl font-semibold text-[#094293] italic">
+                Cada inicio tiene un poder inmenso. Estoy aquí para acompañarte.
               </p>
             </div>
           </div>
 
           <div className="relative fade-in-up delay-200">
             <div className="aspect-[4/3] relative rounded-2xl overflow-hidden shadow-2xl">
-               {/* Using a high-quality Unsplash image representing community/happiness/family */}
                <img 
-                src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=2070&auto=format&fit=crop" 
+                src="https://i.imgur.com/WIm0Zfh.jpg" 
                 alt="Grupo de personas felices y unidas" 
                 className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-700"
               />

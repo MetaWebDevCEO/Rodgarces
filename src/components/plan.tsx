@@ -9,7 +9,7 @@ const Plan = () => {
           
           {/* Left Column: Headline and CTA */}
           <div className="flex flex-col space-y-8 fade-in-up sticky top-24">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.1] uppercase tracking-tight">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#094293] leading-[1.1] uppercase tracking-tight">
               <span className="block whitespace-nowrap">Tu nuevo comienzo</span>
               <span className="block whitespace-nowrap">es más sencillo</span>
               <span className="block whitespace-nowrap">de lo que crees.</span>
@@ -31,7 +31,7 @@ const Plan = () => {
             <div className="pl-8 pb-12 relative fade-in-up delay-100 group">
               <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-gray-300 group-hover:bg-gray-900 transition-colors duration-300"></div>
               <span className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2 block">Paso 01</span>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:translate-x-1 transition-transform duration-300">
+              <h3 className="text-2xl font-bold text-[#094293] mb-3 group-hover:translate-x-1 transition-transform duration-300">
                 Conecta conmigo
               </h3>
               <p className="text-gray-600 leading-relaxed max-w-md">
@@ -43,7 +43,7 @@ const Plan = () => {
             <div className="pl-8 pb-12 relative fade-in-up delay-200 group">
               <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-gray-300 group-hover:bg-gray-900 transition-colors duration-300"></div>
               <span className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2 block">Paso 02</span>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:translate-x-1 transition-transform duration-300">
+              <h3 className="text-2xl font-bold text-[#094293] mb-3 group-hover:translate-x-1 transition-transform duration-300">
                 Definimos lo que necesitas
               </h3>
               <p className="text-gray-600 leading-relaxed max-w-md">
@@ -55,7 +55,7 @@ const Plan = () => {
             <div className="pl-8 relative fade-in-up delay-300 group">
               <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-gray-300 group-hover:bg-gray-900 transition-colors duration-300"></div>
               <span className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2 block">Paso 03</span>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:translate-x-1 transition-transform duration-300">
+              <h3 className="text-2xl font-bold text-[#094293] mb-3 group-hover:translate-x-1 transition-transform duration-300">
                 Vive una transformación real
               </h3>
               <p className="text-gray-600 leading-relaxed max-w-md">

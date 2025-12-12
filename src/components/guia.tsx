@@ -23,7 +23,7 @@ const Guia = () => {
 
           {/* Right Column: Content */}
           <div className="flex flex-col space-y-4 text-sm text-gray-700 leading-relaxed fade-in-up delay-200">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight uppercase tracking-tight mb-2">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#094293] leading-tight uppercase tracking-tight mb-2">
               <span className="block whitespace-nowrap">He estado ahí.</span>
               <span className="block whitespace-nowrap">Y puedo ayudarte a transformar</span>
               <span className="block whitespace-nowrap">tu historia.</span>
@@ -33,7 +33,7 @@ const Guia = () => {
               Yo también conozco el dolor del duelo, los retos de la crianza y la responsabilidad de liderar. Mi propia experiencia me enseñó una verdad que hoy guía cada conferencia, libro y programa que comparto:
             </p>
             
-            <p className="text-base font-bold text-gray-900 italic">
+            <p className="text-base font-bold text-[#094293] italic">
               Nunca te canses de comenzar de nuevo.
             </p>
 
@@ -42,7 +42,7 @@ const Guia = () => {
             </p>
 
             <div>
-              <p className="font-semibold text-gray-900 mb-2">
+              <p className="font-semibold text-[#094293] mb-2">
                 Soy autor de dos libros que han inspirado a cientos de personas:
               </p>
               <ul className="list-disc pl-5 space-y-1 text-gray-800">
@@ -51,7 +51,7 @@ const Guia = () => {
               </ul>
             </div>
 
-            <p className="font-medium text-gray-900">
+            <p className="font-medium text-[#094293]">
               Mi misión es ayudarte a descubrir la fuerza que nace cuando decides comenzar otra vez.
             </p>
 
