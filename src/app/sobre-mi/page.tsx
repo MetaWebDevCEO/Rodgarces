@@ -41,7 +41,7 @@ const SobreMiPage = () => {
               </div>
               <div className="order-1 md:order-2 relative h-[400px] rounded-3xl overflow-hidden shadow-xl">
                 <img 
-                  src="https://i.imgur.com/hcSBDUO.jpg" 
+                  src="https://i.imgur.com/7KTjoRd.jpg" 
                   alt="Rodrigo Garcés Conferencista" 
                   className="w-full h-full object-cover"
                 />
@@ -66,7 +66,7 @@ const SobreMiPage = () => {
                 </ul>
                 <div className="mt-8 rounded-2xl overflow-hidden h-48 relative">
                    <img 
-                    src="https://i.imgur.com/WIm0Zfh.jpg" 
+                    src="https://i.imgur.com/akgILUP.jpg" 
                     alt="Conferencia" 
                     className="w-full h-full object-cover opacity-90"
                   />

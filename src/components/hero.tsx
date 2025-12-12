@@ -38,7 +38,7 @@ const Hero = () => {
           
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center fade-in-up delay-300">
             <Link
-              href="#contact"
+              href="/conferencia"
               className="inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-medium rounded-full text-gray-900 bg-white hover:bg-gray-100 transition-all hover:shadow-md hover:-translate-y-0.5"
             >
               Agenda una conferencia

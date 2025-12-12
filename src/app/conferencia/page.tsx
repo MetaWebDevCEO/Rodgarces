@@ -27,7 +27,7 @@ const ConferenciaPage = () => {
               {/* Background Image */}
               <div className="absolute inset-0 z-0">
                 <img 
-                  src="https://i.imgur.com/hcSBDUO.jpg" 
+                  src="https://i.imgur.com/9KxMx3o.jpg" 
                   alt="Liderazgo" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -67,7 +67,7 @@ const ConferenciaPage = () => {
               {/* Background Image */}
               <div className="absolute inset-0 z-0">
                 <img 
-                  src="https://i.imgur.com/OZj3NVX.jpg" 
+                  src="https://i.imgur.com/5kViJ4P.jpg" 
                   alt="Duelo y Sanación" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -114,7 +114,7 @@ const ConferenciaPage = () => {
               {/* Background Image */}
               <div className="absolute inset-0 z-0">
                 <img 
-                  src="https://i.imgur.com/WIm0Zfh.jpg" 
+                  src="https://i.imgur.com/7KTjoRd.jpg" 
                   alt="Crianza y Familia" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -151,17 +151,17 @@ const ConferenciaPage = () => {
           </div>
 
           {/* Footer CTA */}
-          <div className="mt-20 text-center bg-white rounded-3xl p-10 md:p-16 shadow-sm border border-gray-100 fade-in-up delay-300">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4 font-display">
+          <div className="mt-20 text-center bg-[#094293] rounded-3xl p-10 md:p-16 shadow-lg fade-in-up delay-300">
+            <h2 className="text-3xl font-bold text-white mb-4 font-display">
               ¿Quieres conocer más de mi trabajo?
             </h2>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
               <span className="block">También soy Autor de dos libros</span>
               <span className="block">que han acompañado a cientos de personas.</span>
             </p>
             <Link 
               href="/libros" 
-              className="inline-flex items-center justify-center bg-white text-gray-900 border-2 border-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-900 hover:text-white transition-all transform hover:scale-105"
+              className="inline-flex items-center justify-center bg-white text-[#094293] font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105 shadow-md"
             >
               Ver libros
             </Link>

@@ -17,7 +17,7 @@ const Plan = () => {
 
             <div className="pt-4">
               <Link
-                href="#contact"
+                href="/contacto"
                 className="inline-flex items-center justify-center px-8 py-4 border border-gray-900 text-base font-medium rounded-full text-gray-900 bg-transparent hover:bg-gray-900 hover:text-white transition-all duration-300"
               >
                 Quiero iniciar este camino

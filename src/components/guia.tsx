@@ -57,7 +57,7 @@ const Guia = () => {
 
             <div className="pt-2 fade-in-up delay-300">
               <Link
-                href="#about"
+                href="/sobre-mi"
                 className="inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-medium rounded-full text-white bg-gray-900 hover:bg-gray-800 transition-all hover:shadow-lg hover:-translate-y-1"
               >
                 Ver más sobre mí
