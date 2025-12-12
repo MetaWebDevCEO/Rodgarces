@@ -21,6 +21,12 @@ const Testimonio = () => {
       author: "Ana Martínez",
       role: "Madre de familia",
       initial: "A"
+    },
+    {
+      quote: "El maestro Rodrigo ha sido un guía para mí y su influencia en mi proceso de vida es de mucha ayuda. Su esencia es única, su optimismo siempre es contagiado a los demás y sus grandes consejos siempre son hechos con el corazón.",
+      author: "Karen López Alcántara",
+      role: "Estudiante de la Universidad Cristóbal Colón",
+      initial: "K"
     }
   ];
 
@@ -35,19 +41,19 @@ const Testimonio = () => {
         </div>
         
         <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none fade-in-up delay-200">
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="flex flex-col justify-between bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                <blockquote className="text-gray-700 leading-7 mb-6">
+              <div key={index} className="flex flex-col justify-between bg-gray-50 p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <blockquote className="text-sm text-gray-700 leading-relaxed mb-4">
                   "{testimonial.quote}"
                 </blockquote>
-                <div className="flex items-center gap-x-4 mt-auto">
-                  <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-lg">
+                <div className="flex items-center gap-x-3 mt-auto">
+                  <div className="h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-sm flex-shrink-0">
                     {testimonial.initial}
                   </div>
-                  <div>
-                    <div className="font-semibold text-gray-900">{testimonial.author}</div>
-                    <div className="text-sm leading-6 text-gray-600">{testimonial.role}</div>
+                  <div className="min-w-0">
+                    <div className="text-sm font-semibold text-gray-900 truncate">{testimonial.author}</div>
+                    <div className="text-xs leading-tight text-gray-600 line-clamp-2">{testimonial.role}</div>
                   </div>
                 </div>
               </div>

@@ -10,12 +10,10 @@ const Plan = () => {
           {/* Left Column: Headline and CTA */}
           <div className="flex flex-col space-y-8 fade-in-up sticky top-24">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.1] uppercase tracking-tight">
-              Tu nuevo comienzo es más sencillo de lo que crees.
+              <span className="block whitespace-nowrap">Tu nuevo comienzo</span>
+              <span className="block whitespace-nowrap">es más sencillo</span>
+              <span className="block whitespace-nowrap">de lo que crees.</span>
             </h2>
-            
-            <p className="text-lg text-gray-600 max-w-md leading-relaxed">
-              No tienes que ver todo el camino para dar el primer paso. Juntos trazaremos la ruta hacia tu transformación.
-            </p>
 
             <div className="pt-4">
               <Link

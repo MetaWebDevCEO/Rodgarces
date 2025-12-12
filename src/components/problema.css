@@ -1,7 +1,5 @@
 .problema-section {
-  background-color: #fafafa; /* Neutral lighter gray */
-  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-  background-size: 24px 24px;
+  position: relative;
 }
 
 /* Optional: Custom list bullet styling if needed, though Tailwind can handle most */

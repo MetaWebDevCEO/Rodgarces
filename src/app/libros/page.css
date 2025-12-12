@@ -1,0 +1,58 @@
+/* src/app/libros/page.css */
+
+/* 3D Book Effect */
+.book-container {
+  perspective: 1000px;
+}
+
+.book-cover {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 2/3;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  transform: rotateY(-15deg);
+  box-shadow: 20px 20px 50px rgba(0,0,0,0.2);
+}
+
+.book-container:hover .book-cover {
+  transform: rotateY(0deg) scale(1.02);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+}
+
+.book-spine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0.2), rgba(0,0,0,0.1));
+  transform: rotateY(90deg) translateZ(-20px); /* Adjust based on width */
+  transform-origin: left;
+}
+
+/* Elegant Text Reveal */
+.reveal-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: revealText 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes revealText {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+
+/* Custom Gradient Text */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #1f2937 0%, #4b5563 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

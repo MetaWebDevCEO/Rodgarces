@@ -12,12 +12,21 @@ export default function Consecuencias() {
   ];
 
   return (
-    <section className="bg-gray-50 py-24 sm:py-32 relative overflow-hidden">
+    <section className="relative py-24 sm:py-32 overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <div 
+          className="absolute inset-0 bg-no-repeat bg-center"
+          style={{ 
+            backgroundImage: "url('https://i.imgur.com/igjhGIr.jpg')",
+            backgroundSize: 'cover'
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-white/80"></div>
+      </div>
+
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center fade-in-up">
-          <h2 className="text-lg font-semibold text-gray-900 tracking-wider uppercase">
-            CONSECUENCIAS DE NO ACTUAR
-          </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl font-display">
             No dejes que la vida avance sin claridad
           </p>
@@ -45,7 +54,7 @@ export default function Consecuencias() {
 
         <div className="mt-16 text-center fade-in-up delay-300">
              <p className="text-2xl font-medium text-gray-900 italic">
-            "Un nuevo comienzo está a tu alcance."
+            Un nuevo comienzo está a tu alcance.
           </p>
         </div>
       </div>

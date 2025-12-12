@@ -25,16 +25,11 @@ const Hero = () => {
         
         {/* Text Content */}
         <div className="mx-auto">
-          <div className="inline-flex items-center px-4 py-2 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm shadow-sm mb-6">
-            <span className="text-sm font-medium text-white">
-              Escritor | Conferencista | Formador
-            </span>
-          </div>
           
           <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl lg:text-7xl fade-in-up delay-100 drop-shadow-lg">
             <span className="block">Te ayudo a transformar</span>
-            <span className="block text-blue-200">cada nuevo comienzo</span>
-            <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-2 font-normal text-gray-100">en una oportunidad para tu vida.</span>
+            <span className="text-blue-200">cada nuevo comienzo</span>
+            <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-gray-100"> en una oportunidad para tu vida.</span>
           </h1>
           
           <p className="mt-6 text-lg text-gray-100 leading-relaxed max-w-2xl mx-auto fade-in-up delay-200 drop-shadow-md">

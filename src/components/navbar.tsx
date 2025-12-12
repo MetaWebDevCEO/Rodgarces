@@ -17,8 +17,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center animate-fade-in">
-            <Link href="/" className="text-2xl font-bold text-gray-900 tracking-tight hover:text-gray-700 transition-colors">
-              Rodrigo Garcés
+            <Link href="/" className="flex flex-col group">
+              <span className="text-2xl font-bold text-gray-900 tracking-tight group-hover:text-gray-700 transition-colors leading-none">
+                RodGarcés
+              </span>
+              <span className="text-[0.65rem] font-medium text-gray-500 tracking-widest uppercase mt-1 group-hover:text-gray-800 transition-colors">
+                Liderazgo • Duelo • Crianza
+              </span>
             </Link>
           </div>
 

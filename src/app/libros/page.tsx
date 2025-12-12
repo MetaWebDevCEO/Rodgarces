@@ -1,16 +1,142 @@
 import React from 'react';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
+import Link from 'next/link';
+import './page.css';
 
 const LibrosPage = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
-      <main className="flex-grow pt-24 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-             <h1 className="text-4xl font-bold mb-8 font-display">Libros</h1>
-             <p className="text-xl text-gray-600">Próximamente...</p>
+      
+      {/* Hero Section */}
+      <div className="bg-gray-50 pt-32 pb-20">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 font-display tracking-tight text-gray-900 reveal-text">
+            Mis Libros
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-500 max-w-2xl mx-auto font-light reveal-text delay-100">
+            Historias escritas desde el corazón para acompañarte en tu proceso de sanación y crecimiento.
+          </p>
         </div>
+      </div>
+
+      <main className="flex-grow">
+        
+        {/* Book 1 Section */}
+        <section className="py-24 px-6 lg:px-12 border-b border-gray-100">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+              
+              {/* Image Side */}
+              <div className="w-full lg:w-1/2 flex justify-center lg:justify-end book-container reveal-text delay-200">
+                <div className="book-cover bg-stone-100 rounded-r-md border-l-4 border-gray-800 flex items-center justify-center p-8 relative overflow-hidden group">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/40 to-transparent z-10"></div>
+                  <div className="text-center z-20">
+                    <h3 className="font-display font-bold text-3xl text-gray-900 leading-tight mb-2">NUNCA TE CANSES</h3>
+                    <p className="font-serif italic text-gray-500 mb-8">de comenzar de nuevo</p>
+                    <div className="w-12 h-1 bg-gray-900 mx-auto"></div>
+                    <p className="mt-8 text-xs tracking-[0.2em] text-gray-400">ROD GARCÉS</p>
+                  </div>
+                  {/* Spine Effect */}
+                  <div className="absolute left-0 top-0 bottom-0 w-2 bg-gradient-to-r from-gray-300 to-transparent opacity-50"></div>
+                </div>
+              </div>
+
+              {/* Content Side */}
+              <div className="w-full lg:w-1/2 reveal-text delay-300">
+                <span className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-4 block">Best Seller</span>
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 font-display leading-tight">
+                  Nunca te canses de comenzar de nuevo
+                </h2>
+                <div className="prose prose-lg text-gray-600 mb-10 space-y-6 font-light">
+                  <p>
+                    Mantener la esperanza cuando parece que la vida se te vuelve en contra no es una tarea sencilla, y más cuando se viven situaciones de dolor y de pérdida.
+                  </p>
+                  <p>
+                    En este libro, comparto mi experiencia personal viviendo el duelo, atravesando etapas como el enojo, la negación y la tristeza, hasta llegar a la reconciliación y aceptación.
+                  </p>
+                  <p className="italic text-gray-800 border-l-2 border-blue-600 pl-4">
+                    "Un diario íntimo desde el ingreso al hospital hasta el regreso a casa para iniciar una nueva vida."
+                  </p>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link 
+                    href="https://www.amazon.com.mx/NUNCA-TE-CANSES-COMENZAR-NUEVO-ebook/dp/B09YXRNQS2/ref=sr_1_1?crid=376S03YHAIN17&dib=eyJ2IjoiMSJ9.tigN60isa96dVSFVEqWlTsMDoTxnwTSDkvTxudSV1Mo0Aym-As_T4dqBKKOljDga_LE_YJfETCsbE1yqpSUZvjsxOWuMSKoQ9HhRAbK14_TB5YdDXrWDoclasMtOw4Q1MZDJixrJ0ivcO_yCLwC4-5kozQjbee1YSBT2gZ9hcKafE7f9XCdeFoiG5DrJCZ0JCkp9ApoqcC2DnjKWw248ORr4O8OjBl7L4Zb0zuNo1qfwAkqzSjpNXhYpu4ZKcBvtRZKn3Pd2nY35JouVlQAHnkBB67XU-mtSZwrVmEwmcyg.S_tkZlylflLfVcxDK8oFi6mTZjw7F74YcfFQ7U1BQ48&dib_tag=se&keywords=nunca+te+canses+de+comenzar&qid=1764523871&sprefix=%2Caps%2C319&sr=8-1" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-8 py-4 text-sm font-bold tracking-wide text-white transition-all duration-300 bg-gray-900 rounded-lg hover:bg-gray-800 hover:scale-105 group"
+                  >
+                    <span>COMPRAR EN AMAZON</span>
+                    <svg className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        {/* Book 2 Section */}
+        <section className="py-24 px-6 lg:px-12 bg-stone-50">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-16 lg:gap-24">
+              
+              {/* Image Side */}
+              <div className="w-full lg:w-1/2 flex justify-center lg:justify-start book-container reveal-text">
+                <div className="book-cover bg-blue-50 rounded-r-md border-l-4 border-blue-900 flex items-center justify-center p-8 relative overflow-hidden group">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/40 to-transparent z-10"></div>
+                  <div className="text-center z-20">
+                    <h3 className="font-display font-bold text-3xl text-blue-900 leading-tight mb-2">LA AVENTURA</h3>
+                    <p className="font-serif italic text-blue-800 mb-8">de ser papá</p>
+                    <div className="w-12 h-1 bg-blue-900 mx-auto"></div>
+                    <p className="mt-8 text-xs tracking-[0.2em] text-blue-400">ROD GARCÉS</p>
+                  </div>
+                  {/* Spine Effect */}
+                  <div className="absolute left-0 top-0 bottom-0 w-2 bg-gradient-to-r from-blue-200 to-transparent opacity-50"></div>
+                </div>
+              </div>
+
+              {/* Content Side */}
+              <div className="w-full lg:w-1/2 reveal-text delay-100">
+                <span className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-4 block">Nuevo Lanzamiento</span>
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 font-display leading-tight">
+                  La aventura de ser papá
+                </h2>
+                <div className="prose prose-lg text-gray-600 mb-10 space-y-6 font-light">
+                  <p>
+                    La paternidad es una travesía donde cada día trae nuevas oportunidades para aprender y crecer. Es una aventura llena de desafíos, pero también de inmensas alegrías.
+                  </p>
+                  <p>
+                    A través de anécdotas conmovedoras, comparto lecciones valiosas sobre cómo los pequeños instantes con nuestros hijos se convierten en grandes aprendizajes sobre la vida y el amor.
+                  </p>
+                  <p className="italic text-gray-800 border-l-2 border-blue-600 pl-4">
+                    "Una invitación a reflexionar sobre tu propio viaje en esta hermosa y desafiante travesía."
+                  </p>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link 
+                    href="https://www.amazon.com.mx/aventura-ser-pap%C3%A1-Spanish/dp/B0FCM3X7V4/ref=sr_1_1?crid=1NA633D2IUXGF&dib=eyJ2IjoiMSJ9.5DUijvuboXNIAmOUWGtxNk8uRK8ulY54-BZ_6vvsT4f3RjRmkoAdj3Eeux4ks_1z6HYuZWUAHDSMpq0Rw9YlGPdfEgpv3W0O2BZvLHgnX37apJL0zaLgUsgvmFBzPGaumcEPP5I9fu_I8QCVR92cB5D7ikd9kI9v_Bq_k31XJZAB1jHYI7FVjmz1h9JFyVT6LaZf56Zqbqu80Mui2FZLoXO3KD3AtY7YuJXUIlk_JQQmmH7fK-aiv4FB0PmIaTk4Q5MBy1Kj1jHGJrrXJubzxvtcCONxxNtMBMrjMd_-T9A.z-Fqh575LqhGSBKa4ZkO0JUkF8vW3Hix6GlXwGFLQwM&dib_tag=se&keywords=la+aventura+de+ser+pap%C3%A1&qid=1764523803&sprefix=%2Caps%2C175&sr=8-1&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-8 py-4 text-sm font-bold tracking-wide text-white transition-all duration-300 bg-gray-900 rounded-lg hover:bg-gray-800 hover:scale-105 group"
+                  >
+                    <span>COMPRAR EN AMAZON</span>
+                    <svg className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
       </main>
       <Footer />
     </div>
