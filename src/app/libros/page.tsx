@@ -12,7 +12,7 @@ const LibrosPage = () => {
       {/* Hero Section */}
       <div className="bg-gray-50 pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 font-display tracking-tight text-gray-900 reveal-text">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 font-display tracking-tight text-[#094293] reveal-text">
             Mis Libros
           </h1>
           <p className="text-xl md:text-2xl text-gray-500 max-w-2xl mx-auto font-light reveal-text delay-100">
@@ -30,23 +30,19 @@ const LibrosPage = () => {
               
               {/* Image Side */}
               <div className="w-full lg:w-1/2 flex justify-center lg:justify-end book-container reveal-text delay-200">
-                <div className="book-cover bg-stone-100 rounded-r-md border-l-4 border-gray-800 flex items-center justify-center p-8 relative overflow-hidden group">
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/40 to-transparent z-10"></div>
-                  <div className="text-center z-20">
-                    <h3 className="font-display font-bold text-3xl text-gray-900 leading-tight mb-2">NUNCA TE CANSES</h3>
-                    <p className="font-serif italic text-gray-500 mb-8">de comenzar de nuevo</p>
-                    <div className="w-12 h-1 bg-gray-900 mx-auto"></div>
-                    <p className="mt-8 text-xs tracking-[0.2em] text-gray-400">ROD GARCÉS</p>
-                  </div>
-                  {/* Spine Effect */}
-                  <div className="absolute left-0 top-0 bottom-0 w-2 bg-gradient-to-r from-gray-300 to-transparent opacity-50"></div>
+                <div className="relative w-[300px] h-[450px] shadow-2xl rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
+                  <img 
+                    src="https://i.imgur.com/AvTQ9me.png" 
+                    alt="Portada del libro Nunca te canses de comenzar de nuevo" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
 
               {/* Content Side */}
               <div className="w-full lg:w-1/2 reveal-text delay-300">
                 <span className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-4 block">Best Seller</span>
-                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 font-display leading-tight">
+                <h2 className="text-4xl md:text-5xl font-bold text-[#094293] mb-8 font-display leading-tight">
                   Nunca te canses de comenzar de nuevo
                 </h2>
                 <div className="prose prose-lg text-gray-600 mb-10 space-y-6 font-light">
@@ -87,23 +83,19 @@ const LibrosPage = () => {
               
               {/* Image Side */}
               <div className="w-full lg:w-1/2 flex justify-center lg:justify-start book-container reveal-text">
-                <div className="book-cover bg-blue-50 rounded-r-md border-l-4 border-blue-900 flex items-center justify-center p-8 relative overflow-hidden group">
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/40 to-transparent z-10"></div>
-                  <div className="text-center z-20">
-                    <h3 className="font-display font-bold text-3xl text-blue-900 leading-tight mb-2">LA AVENTURA</h3>
-                    <p className="font-serif italic text-blue-800 mb-8">de ser papá</p>
-                    <div className="w-12 h-1 bg-blue-900 mx-auto"></div>
-                    <p className="mt-8 text-xs tracking-[0.2em] text-blue-400">ROD GARCÉS</p>
-                  </div>
-                  {/* Spine Effect */}
-                  <div className="absolute left-0 top-0 bottom-0 w-2 bg-gradient-to-r from-blue-200 to-transparent opacity-50"></div>
+                <div className="relative w-[300px] h-[450px] shadow-2xl rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
+                  <img 
+                    src="https://i.imgur.com/wuLAu7I.png" 
+                    alt="Portada del libro La aventura de ser papá" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
 
               {/* Content Side */}
               <div className="w-full lg:w-1/2 reveal-text delay-100">
                 <span className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-4 block">Nuevo Lanzamiento</span>
-                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 font-display leading-tight">
+                <h2 className="text-4xl md:text-5xl font-bold text-[#094293] mb-8 font-display leading-tight">
                   La aventura de ser papá
                 </h2>
                 <div className="prose prose-lg text-gray-600 mb-10 space-y-6 font-light">
