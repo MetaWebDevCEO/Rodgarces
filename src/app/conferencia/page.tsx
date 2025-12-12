@@ -27,7 +27,7 @@ const ConferenciaPage = () => {
               {/* Background Image */}
               <div className="absolute inset-0 z-0">
                 <img 
-                  src="https://i.imgur.com/9KxMx3o.jpg" 
+                  src="https://i.imgur.com/yVup3BV.jpg" 
                   alt="Liderazgo" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -67,7 +67,7 @@ const ConferenciaPage = () => {
               {/* Background Image */}
               <div className="absolute inset-0 z-0">
                 <img 
-                  src="https://i.imgur.com/5kViJ4P.jpg" 
+                  src="https://i.imgur.com/KdL9987.jpg" 
                   alt="Duelo y Sanación" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -114,7 +114,7 @@ const ConferenciaPage = () => {
               {/* Background Image */}
               <div className="absolute inset-0 z-0">
                 <img 
-                  src="https://i.imgur.com/7KTjoRd.jpg" 
+                  src="https://i.imgur.com/LGPh7YF.jpg" 
                   alt="Crianza y Familia" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />

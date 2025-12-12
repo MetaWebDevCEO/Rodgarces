@@ -1,0 +1,28 @@
+.nunca-section {
+  position: relative;
+}
+
+.nunca-overlay {
+  background: linear-gradient(to right, rgba(9, 66, 147, 0.9), rgba(9, 66, 147, 0.7));
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

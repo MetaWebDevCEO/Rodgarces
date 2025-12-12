@@ -18,8 +18,8 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center animate-fade-in">
             <Link href="/" className="flex flex-col group">
-              <span className="text-2xl font-bold text-gray-900 tracking-tight group-hover:text-gray-700 transition-colors leading-none">
-                RodGarcés
+              <span className="text-2xl font-bold text-[#094293] tracking-tight group-hover:text-[#07306b] transition-colors leading-none">
+                Rod Garcés
               </span>
               <span className="text-[0.65rem] font-medium text-gray-500 tracking-widest uppercase mt-1 group-hover:text-gray-800 transition-colors">
                 Liderazgo • Duelo • Crianza
@@ -43,7 +43,7 @@ const Navbar = () => {
             </Link>
             <Link
               href="/contacto"
-              className="bg-gray-900 text-white px-5 py-2.5 rounded-full font-medium hover:bg-gray-800 transition-all transform hover:scale-105 animate-fade-in"
+              className="bg-[#094293] text-white px-5 py-2.5 rounded-full font-medium hover:bg-[#07306b] transition-all transform hover:scale-105 animate-fade-in"
               style={{ animationDelay: '0.5s' }}
             >
               Contacto

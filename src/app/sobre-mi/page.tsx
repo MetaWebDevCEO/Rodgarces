@@ -13,11 +13,11 @@ const SobreMiPage = () => {
           {/* Header */}
           <div className="text-center mb-16 fade-in-up">
             <h1 className="text-5xl md:text-6xl font-bold mb-8 font-display text-[#094293]">
-              Sobre Mí
+              Sobre mí
             </h1>
             <div className="w-24 h-1 bg-[#094293] mx-auto rounded-full mb-8"></div>
              <p className="text-xl md:text-2xl text-gray-600 font-light leading-relaxed max-w-3xl mx-auto">
-              "Estoy convencido de que cada nuevo comienzo es una oportunidad para transformar la vida."
+              Estoy convencido de que cada nuevo comienzo es una oportunidad para transformar la vida.
             </p>
           </div>
 
@@ -29,7 +29,7 @@ const SobreMiPage = () => {
               <div className="order-2 md:order-1 space-y-8">
                 <div className="bg-gray-50 p-8 rounded-3xl border border-gray-100 shadow-sm">
                   <p className="mb-6 text-xl">
-                    Mi misión es acompañar a las personas a sanar, crecer y redescubrir su propósito desde la fe, el amor y la esperanza.
+                    Mi misión es acompañar a las personas a descubrir la fuerza que surge cuando deciden comenzar de nuevo, ayudándolas a sanar, crecer y redescubrir su propósito desde la fe, el amor y la esperanza.
                   </p>
                   <p className="font-medium text-[#094293] text-lg">
                     Soy conferencista, escritor y formador. He dedicado mi vida a inspirar procesos de desarrollo humano y espiritual.
@@ -41,9 +41,9 @@ const SobreMiPage = () => {
               </div>
               <div className="order-1 md:order-2 relative h-[400px] rounded-3xl overflow-hidden shadow-xl">
                 <img 
-                  src="https://i.imgur.com/7KTjoRd.jpg" 
+                  src="https://i.imgur.com/HXo9Tv6.jpg" 
                   alt="Rodrigo Garcés Conferencista" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-[center_25%]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#094293]/40 to-transparent"></div>
               </div>
@@ -102,7 +102,8 @@ const SobreMiPage = () => {
             {/* Closing */}
             <div className="text-center pt-16 pb-8 fade-in-up delay-200">
               <h2 className="text-3xl md:text-5xl font-display font-bold text-[#094293]">
-                Nunca te canses de comenzar de nuevo.
+                Nunca te canses de comenzar <br />
+                de nuevo.
               </h2>
             </div>
 

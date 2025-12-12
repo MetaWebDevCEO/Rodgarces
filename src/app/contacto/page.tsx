@@ -68,11 +68,13 @@ const ContactoPage = () => {
                     <Link href="#" className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-gray-600 hover:text-[#094293] hover:scale-110 transition-all">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                     </Link>
+                    {/* TikTok */}
                     <Link href="#" className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-gray-600 hover:text-[#094293] hover:scale-110 transition-all">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5v4a9 9 0 0 1-9-9Z"></path></svg>
                     </Link>
+                    {/* X (formerly Twitter) */}
                     <Link href="#" className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-gray-600 hover:text-[#094293] hover:scale-110 transition-all">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" /></svg>
                     </Link>
                   </div>
                 </div>
@@ -82,17 +84,17 @@ const ContactoPage = () => {
 
             {/* Contact Form */}
             <div className="bg-white p-8 md:p-10 rounded-3xl border border-gray-200 shadow-xl fade-in-up delay-200">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 font-display">Envíame un mensaje</h3>
+              <h3 className="text-2xl font-bold text-[#094293] mb-6 font-display">Envíame un mensaje</h3>
               <form className="space-y-6">
                 
                 {/* Nombre */}
                 <div>
-                  <label htmlFor="nombre" className="block text-sm font-semibold text-gray-700 mb-2">Nombre completo</label>
+                  <label htmlFor="nombre" className="block text-sm font-semibold text-[#094293] mb-2">Nombre completo</label>
                   <input 
                     type="text" 
                     id="nombre" 
                     name="nombre" 
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white text-[#094293]"
                     placeholder="Tu nombre"
                   />
                 </div>
@@ -100,22 +102,22 @@ const ContactoPage = () => {
                 {/* Email & Telefono */}
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">Correo electrónico</label>
+                    <label htmlFor="email" className="block text-sm font-semibold text-[#094293] mb-2">Correo electrónico</label>
                     <input 
                       type="email" 
                       id="email" 
                       name="email" 
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white text-[#094293]"
                       placeholder="tucorreo@ejemplo.com"
                     />
                   </div>
                   <div>
-                    <label htmlFor="telefono" className="block text-sm font-semibold text-gray-700 mb-2">Teléfono</label>
+                    <label htmlFor="telefono" className="block text-sm font-semibold text-[#094293] mb-2">Teléfono</label>
                     <input 
                       type="tel" 
                       id="telefono" 
                       name="telefono" 
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white text-[#094293]"
                       placeholder="+52 123 456 7890"
                     />
                   </div>
@@ -123,33 +125,34 @@ const ContactoPage = () => {
 
                 {/* Ubicacion */}
                 <div>
-                  <label htmlFor="ubicacion" className="block text-sm font-semibold text-gray-700 mb-2">¿De dónde nos escribes?</label>
+                  <label htmlFor="ubicacion" className="block text-sm font-semibold text-[#094293] mb-2">¿De dónde nos escribes?</label>
                   <input 
                     type="text" 
                     id="ubicacion" 
                     name="ubicacion" 
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white text-[#094293]"
                     placeholder="Ciudad, País"
                   />
                 </div>
 
                 {/* Servicio */}
                 <div>
-                  <label htmlFor="servicio" className="block text-sm font-semibold text-gray-700 mb-2">Servicio interesado</label>
+                  <label htmlFor="servicio" className="block text-sm font-semibold text-[#094293] mb-2">Servicio interesado</label>
                   <div className="relative">
                     <select 
                       id="servicio" 
                       name="servicio" 
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white appearance-none cursor-pointer"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white appearance-none cursor-pointer text-[#094293]"
                     >
                       <option value="" disabled selected>Selecciona una opción</option>
                       <option value="conferencia">Conferencia</option>
                       <option value="taller">Taller</option>
+                      <option value="curso">Curso</option>
                       <option value="mentoria">Mentoría</option>
                       <option value="capacitacion">Capacitación</option>
                       <option value="acompanamiento">Acompañamiento</option>
                     </select>
-                    <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-gray-500">
+                    <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-[#094293]">
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                     </div>
                   </div>
@@ -157,12 +160,12 @@ const ContactoPage = () => {
 
                 {/* Mensaje */}
                 <div>
-                  <label htmlFor="mensaje" className="block text-sm font-semibold text-gray-700 mb-2">Mensaje</label>
+                  <label htmlFor="mensaje" className="block text-sm font-semibold text-[#094293] mb-2">Mensaje</label>
                   <textarea 
                     id="mensaje" 
                     name="mensaje" 
                     rows={4} 
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white resize-none"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white resize-none text-[#094293]"
                     placeholder="Cuéntame más sobre tu evento o consulta..."
                   ></textarea>
                 </div>

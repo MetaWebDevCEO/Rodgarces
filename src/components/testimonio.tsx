@@ -31,12 +31,23 @@ const Testimonio = () => {
   ];
 
   return (
-    <section className="bg-white py-24 sm:py-32 overflow-hidden">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="relative py-24 sm:py-32 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://i.imgur.com/BCVjaSl.jpg" 
+          alt="Background" 
+          className="w-full h-full object-cover opacity-350"
+        />
+        <div className="absolute inset-0 bg-gray-100/90 backdrop-blur-[1px]"></div>
+      </div>
+
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         <div className="mx-auto max-w-2xl text-center fade-in-up">
           <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#094293] uppercase">Testimonios</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-[#094293] sm:text-4xl font-display">
-            Lo que dicen quienes han vivido la experiencia
+            Lo que dicen personas <br/>
+            que conocen mi trayectoria
           </p>
         </div>
         

@@ -3,22 +3,31 @@ import "./plan.css";
 
 const Plan = () => {
   return (
-    <section className="plan-section py-24 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+    <section className="plan-section relative py-24 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://i.imgur.com/IZz5IhF.jpg" 
+          alt="Background" 
+          className="w-full h-full object-cover opacity-20"
+        />
+      </div>
+
+      <div className="max-w-7xl mx-auto w-full relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
           
           {/* Left Column: Headline and CTA */}
-          <div className="flex flex-col space-y-8 fade-in-up sticky top-24">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#094293] leading-[1.1] uppercase tracking-tight">
-              <span className="block whitespace-nowrap">Tu nuevo comienzo</span>
-              <span className="block whitespace-nowrap">es más sencillo</span>
-              <span className="block whitespace-nowrap">de lo que crees.</span>
+          <div className="flex flex-col space-y-8 fade-in-up relative lg:sticky lg:top-24 text-center lg:text-left">
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-[#094293] leading-[1.1] uppercase tracking-tight">
+              <span className="block lg:whitespace-nowrap">Tu nuevo comienzo</span>
+              <span className="block lg:whitespace-nowrap">es más sencillo</span>
+              <span className="block lg:whitespace-nowrap">de lo que crees.</span>
             </h2>
 
-            <div className="pt-4">
+            <div className="pt-4 flex justify-center lg:justify-start">
               <Link
                 href="/contacto"
-                className="inline-flex items-center justify-center px-8 py-4 border border-gray-900 text-base font-medium rounded-full text-gray-900 bg-transparent hover:bg-gray-900 hover:text-white transition-all duration-300"
+                className="inline-flex items-center justify-center px-8 py-4 border border-gray-900 text-base font-medium rounded-full text-gray-900 bg-white/50 backdrop-blur-sm hover:bg-gray-900 hover:text-white transition-all duration-300 w-full sm:w-auto shadow-sm"
               >
                 Quiero iniciar este camino
               </Link>

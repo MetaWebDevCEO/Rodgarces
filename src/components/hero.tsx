@@ -21,15 +21,15 @@ const Hero = () => {
         <div className="absolute -bottom-32 left-20 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         
         {/* Text Content */}
         <div className="mx-auto">
           
-          <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl lg:text-7xl fade-in-up delay-100 drop-shadow-lg">
-            <span className="block">Te ayudo a transformar</span>
-            <span className="text-blue-200">cada nuevo comienzo</span>
-            <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-gray-100"> en una oportunidad para tu vida.</span>
+          <h1 className="text-3xl tracking-tight font-extrabold text-white sm:text-4xl md:text-5xl lg:text-6xl fade-in-up delay-100 drop-shadow-lg">
+            Te ayudo a transformar <br />
+            <span className="text-blue-200">cada nuevo comienzo</span> 
+            <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-gray-100 mt-2">en una oportunidad para tu vida.</span>
           </h1>
           
           <p className="mt-6 text-lg text-gray-100 leading-relaxed max-w-2xl mx-auto fade-in-up delay-200 drop-shadow-md">
@@ -44,6 +44,10 @@ const Hero = () => {
               Agenda una conferencia
             </Link>
           </div>
+          
+          <p className="mt-8 text-lg sm:text-xl text-blue-200 font-medium italic fade-in-up delay-500">
+            "Nunca te canses de comenzar de nuevo"
+          </p>
         </div>
 
       </div>

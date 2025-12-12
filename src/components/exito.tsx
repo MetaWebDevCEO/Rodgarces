@@ -35,7 +35,8 @@ export default function Exito() {
 
             <div className="mt-12 border-l-4 border-gray-900 pl-6 py-2">
               <p className="text-xl font-semibold text-[#094293] italic">
-                Cada inicio tiene un poder inmenso. Estoy aquí para acompañarte.
+                Cada inicio tiene un poder inmenso. <br/>
+                Estoy aquí para acompañarte.
               </p>
             </div>
           </div>
@@ -43,7 +44,7 @@ export default function Exito() {
           <div className="relative fade-in-up delay-200">
             <div className="aspect-[4/3] relative rounded-2xl overflow-hidden shadow-2xl">
                <img 
-                src="https://i.imgur.com/WIm0Zfh.jpg" 
+                src="https://i.imgur.com/oXl9Cy7.jpg" 
                 alt="Grupo de personas felices y unidas" 
                 className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-700"
               />
