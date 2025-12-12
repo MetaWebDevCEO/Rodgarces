@@ -22,6 +22,9 @@ const clashDisplay = localFont({
 export const metadata: Metadata = {
   title: "Rodrigo Garcés - Escritor & Conferencista",
   description: "Sanar para Volver a Vivir",
+  icons: {
+    icon: '/RodGarces.svg',
+  },
 };
 
 export default function RootLayout({
