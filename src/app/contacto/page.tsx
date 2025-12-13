@@ -1,10 +1,56 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import Link from 'next/link';
 import './page.css';
 
 const ContactoPage = () => {
+  const [formData, setFormData] = useState({
+    nombre: '',
+    email: '',
+    telefono: '',
+    ubicacion: '',
+    servicio: '',
+    mensaje: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const { nombre, email, telefono, ubicacion, servicio, mensaje } = formData;
+    
+    const text = ` *Hola, me interesa contactar con Rod Garcés.*
+
+ *Información de contacto:*
+━━━━━━━━━━━━━━━━━━
+*Nombre:* ${nombre}
+*Email:* ${email}
+*Teléfono:* ${telefono}
+*Ubicación:* ${ubicacion}
+
+*Detalles de la solicitud:*
+━━━━━━━━━━━━━━━━━━
+*Servicio de interés:* ${servicio}
+
+*Mensaje:*
+${mensaje}
+
+━━━━━━━━━━━━━━━━━━
+_Enviado desde el sitio web_`;
+
+    const whatsappUrl = `https://wa.me/5212297799452?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
@@ -81,7 +127,7 @@ const ContactoPage = () => {
             {/* Contact Form */}
             <div className="bg-white p-8 md:p-10 rounded-3xl border border-gray-200 shadow-xl fade-in-up delay-200">
               <h3 className="text-2xl font-bold text-[#094293] mb-6 font-display">Envíame un mensaje</h3>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 
                 {/* Nombre */}
                 <div>
@@ -90,8 +136,11 @@ const ContactoPage = () => {
                     type="text" 
                     id="nombre" 
                     name="nombre" 
+                    value={formData.nombre}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white text-[#094293]"
                     placeholder="Tu nombre"
+                    required
                   />
                 </div>
 
@@ -103,8 +152,11 @@ const ContactoPage = () => {
                       type="email" 
                       id="email" 
                       name="email" 
+                      value={formData.email}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white text-[#094293]"
                       placeholder="tucorreo@ejemplo.com"
+                      required
                     />
                   </div>
                   <div>
@@ -113,8 +165,11 @@ const ContactoPage = () => {
                       type="tel" 
                       id="telefono" 
                       name="telefono" 
+                      value={formData.telefono}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white text-[#094293]"
                       placeholder="+52 123 456 7890"
+                      required
                     />
                   </div>
                 </div>
@@ -126,6 +181,8 @@ const ContactoPage = () => {
                     type="text" 
                     id="ubicacion" 
                     name="ubicacion" 
+                    value={formData.ubicacion}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white text-[#094293]"
                     placeholder="Ciudad, País"
                   />
@@ -138,9 +195,11 @@ const ContactoPage = () => {
                     <select 
                       id="servicio" 
                       name="servicio" 
+                      value={formData.servicio}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white appearance-none cursor-pointer text-[#094293]"
                     >
-                      <option value="" disabled selected>Selecciona una opción</option>
+                      <option value="" disabled>Selecciona una opción</option>
                       <option value="conferencia">Conferencia</option>
                       <option value="taller">Taller</option>
                       <option value="curso">Curso</option>
@@ -160,9 +219,12 @@ const ContactoPage = () => {
                   <textarea 
                     id="mensaje" 
                     name="mensaje" 
+                    value={formData.mensaje}
+                    onChange={handleChange}
                     rows={4} 
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#094293] focus:ring-2 focus:ring-[#094293]/20 outline-none transition-all bg-gray-50 focus:bg-white resize-none text-[#094293]"
                     placeholder="Cuéntame más sobre tu evento o consulta..."
+                    required
                   ></textarea>
                 </div>
 
