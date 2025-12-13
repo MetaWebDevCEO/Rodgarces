@@ -20,7 +20,7 @@ const Problema = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Left Column: Big Headline */}
           <div className="flex flex-col">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#094293] leading-tight uppercase tracking-tight fade-in-up">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#094293] leading-tight uppercase tracking-widest fade-in-up">
               Cuando la vida cambia, necesitamos guía para seguir avanzando.
             </h2>
           </div>

@@ -18,7 +18,7 @@ const Plan = () => {
           
           {/* Left Column: Headline and CTA */}
           <div className="flex flex-col space-y-8 fade-in-up relative lg:sticky lg:top-24 text-center lg:text-left">
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-[#094293] leading-[1.1] uppercase tracking-tight">
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-[#094293] leading-[1.1] uppercase tracking-wider">
               <span className="block lg:whitespace-nowrap">Tu nuevo comienzo</span>
               <span className="block lg:whitespace-nowrap">es más sencillo</span>
               <span className="block lg:whitespace-nowrap">de lo que crees.</span>

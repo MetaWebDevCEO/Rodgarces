@@ -69,7 +69,7 @@ const ConferenciaPage = () => {
                 <img 
                   src="https://i.imgur.com/KdL9987.jpg" 
                   alt="Duelo y Sanación" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover object-[15%_center] transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/70 group-hover:bg-black/60 transition-colors duration-300"></div>
               </div>

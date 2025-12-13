@@ -23,12 +23,12 @@ const ContactoPage = () => {
             {/* Contact Info Card */}
             <div className="bg-gray-50 rounded-3xl p-8 md:p-16 border border-gray-100 shadow-sm text-center fade-in-up delay-100 sticky top-24">
               
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-display">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#094293] mb-6 font-display">
                 Rod Garcés
               </h2>
               
               <p className="text-xl md:text-2xl text-[#094293] font-medium italic mb-10">
-                "Nunca te canses de comenzar de nuevo."
+                Nunca te canses de comenzar de nuevo.
               </p>
               
               <div className="flex flex-wrap justify-center gap-3 text-sm font-bold uppercase tracking-widest text-gray-500 mb-10">
@@ -62,19 +62,15 @@ const ContactoPage = () => {
                 <div className="pt-8">
                   <p className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-6">Sígueme en redes sociales</p>
                   <div className="flex justify-center gap-6">
-                    <Link href="#" className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-gray-600 hover:text-[#094293] hover:scale-110 transition-all">
+                    <Link href="https://www.facebook.com/profile.php?id=100046503616035" className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-gray-600 hover:text-[#094293] hover:scale-110 transition-all">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
                     </Link>
-                    <Link href="#" className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-gray-600 hover:text-[#094293] hover:scale-110 transition-all">
+                    <Link href="https://www.instagram.com/rod.garces?igsh=MXUwZjMwMnV5dTVxdw%3D%3D&utm_source=qr" className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-gray-600 hover:text-[#094293] hover:scale-110 transition-all">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                     </Link>
                     {/* TikTok */}
-                    <Link href="#" className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-gray-600 hover:text-[#094293] hover:scale-110 transition-all">
+                    <Link href="https://www.tiktok.com/@rod.garces" className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-gray-600 hover:text-[#094293] hover:scale-110 transition-all">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5v4a9 9 0 0 1-9-9Z"></path></svg>
-                    </Link>
-                    {/* X (formerly Twitter) */}
-                    <Link href="#" className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-gray-600 hover:text-[#094293] hover:scale-110 transition-all">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" /></svg>
                     </Link>
                   </div>
                 </div>

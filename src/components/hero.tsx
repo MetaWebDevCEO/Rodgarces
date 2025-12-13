@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
           
           <p className="mt-8 text-lg sm:text-xl text-blue-200 font-medium italic fade-in-up delay-500">
-            "Nunca te canses de comenzar de nuevo"
+            Nunca te canses de comenzar de nuevo
           </p>
         </div>
 

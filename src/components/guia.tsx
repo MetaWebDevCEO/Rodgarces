@@ -23,10 +23,10 @@ const Guia = () => {
 
           {/* Right Column: Content */}
           <div className="flex flex-col space-y-4 text-sm text-gray-700 leading-relaxed fade-in-up delay-200">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#094293] leading-tight uppercase tracking-tight mb-2">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#094293] leading-tight uppercase tracking-widest mb-2">
               <span className="block whitespace-nowrap">He estado ahí.</span>
-              <span className="block whitespace-nowrap">Y puedo ayudarte a transformar</span>
-              <span className="block whitespace-nowrap">tu historia.</span>
+              <span className="block whitespace-nowrap">Y puedo ayudarte </span>
+              <span className="block whitespace-nowrap">a transformar tu historia.</span>
             </h2>
 
             <p>

@@ -36,7 +36,7 @@ const Nunca = () => {
               href="/contacto"
               className="w-full sm:w-auto px-8 py-4 border-2 border-white text-white text-base font-bold rounded-full hover:bg-white/10 transition-all hover:shadow-lg hover:-translate-y-1 text-center"
             >
-              Contacto
+              Contactarme 
             </Link>
           </div>
         </div>
